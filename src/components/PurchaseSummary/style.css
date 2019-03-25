@@ -1,0 +1,10 @@
+.Summary-Container-Main {
+  border: solid lightgray 1px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border-top: none;
+  box-sizing: border-box;
+  padding: 1em;
+  margin: 0 10%;
+  text-align: left;
+}

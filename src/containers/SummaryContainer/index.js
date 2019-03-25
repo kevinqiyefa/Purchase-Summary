@@ -1,9 +1,11 @@
-import React, { Component } from 'react';
+import { connect } from 'react-redux';
+import PurchaseSummary from '../../components/PurchaseSummary';
 
-class SummaryContainer extends Component {
-  render() {
-    return <div>SummaryContainer</div>;
-  }
+function mapStateToProps(state) {
+  return { pricingData: state };
 }
 
-export default SummaryContainer;
+export default connect(
+  mapStateToProps,
+  {}
+)(PurchaseSummary);
