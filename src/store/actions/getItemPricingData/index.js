@@ -6,18 +6,13 @@ export function fetchItemPricingData() {
     try {
       let itemPricingData = await mockAPI();
 
-      dispatch(fetchPricingData(itemPricingData.pricing));
-      dispatch(fetchItemData(itemPricingData.itemDetails));
+      dispatch(fetchPricingData(itemPricingData));
     } catch (error) {
       //dispatch error msg action
     }
   };
 }
 
-export function fetchPricingData(pricing) {
-  return { type: actions.FETCH_PRICING_DATA, pricing };
-}
-
-export function fetchItemData(itemDetails) {
-  return { type: actions.FETCH_ITEM_DATA, itemDetails };
+export function fetchPricingData(pricingData) {
+  return { type: actions.FETCH_PRICING_DATA, pricingData };
 }

@@ -1,2 +1,1 @@
 export const FETCH_PRICING_DATA = 'FETCH_PRICING_DATA';
-export const FETCH_ITEM_DATA = 'FETCH_ITEM_DATA';
