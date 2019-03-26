@@ -1,0 +1,52 @@
+.Promotion-Section-Title {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.Promotion-Main h4 {
+  text-decoration: underline;
+  margin: 0.8em 0;
+}
+
+.promotion-form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.promotion-form > div {
+  display: flex;
+  justify-content: space-between;
+}
+
+#promotion-form-input-label {
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 0.9em;
+  padding-left: 0.5em;
+  font-weight: 500;
+}
+
+#promotion-form-input-field {
+  margin-right: 2em;
+  border: 1px solid gray;
+}
+
+#promotion-form-button {
+  border: 1px solid rgb(104, 104, 104);
+  color: black;
+  padding: 2px 8px 5px 8px;
+  font-weight: 700;
+  cursor: pointer;
+  border-radius: 25px;
+}
+
+#promotion-form-button:hover {
+  background: #2196f3;
+  border: 1px solid #2196f3;
+  color: white;
+}
+.promotion-form span {
+  color: red;
+  font-size: 0.7em;
+}

@@ -13,7 +13,7 @@ class ItemDetails extends Component {
   render() {
     const { item_name, quantity } = this.props.itemDetails;
     const { savings, subtotal } = this.props.pricing;
-    const discountedPrice = subtotal - savings;
+    const discountedPrice = (subtotal - savings).toFixed(2);
 
     const item = (
       <div className="item-details">
@@ -36,14 +36,14 @@ class ItemDetails extends Component {
     const itemDetails = this.state.isActive ? (
       <div>
         <div className="Item-Details-Title" onClick={this.handleClick}>
-          <h4>Hide item details </h4> <span id="minus" />
+          <h4>Hide item details </h4> <span className="minus" />
         </div>
         {item}
         <hr />
       </div>
     ) : (
       <div onClick={this.handleClick} className="Item-Details-Title">
-        <h4>See item details </h4> <span id="add" />
+        <h4>See item details </h4> <span className="add" />
       </div>
     );
     return <div className="Item-Details-Main">{itemDetails}</div>;

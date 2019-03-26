@@ -10,7 +10,9 @@ const pricingData = {
     item_name:
       'Essntials by OFM ESS-3085 Racing Style Leather Gaming Chair, Red',
     quantity: 1
-  }
+  },
+  promo_code: 'DISCOUNT',
+  discount_applied: false
 };
 
 export const getPricingData = (delay = 1000) => {
