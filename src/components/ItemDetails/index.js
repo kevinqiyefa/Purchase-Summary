@@ -1,6 +1,7 @@
 import React, { Component, Fragment } from 'react';
 import './style.css';
 import itemImage from '../../assets/red-chair.jpeg';
+import PropTypes from 'prop-types';
 
 class ItemDetails extends Component {
   state = {
@@ -49,5 +50,10 @@ class ItemDetails extends Component {
     return <div className="Item-Details-Main">{itemDetails}</div>;
   }
 }
+
+ItemDetails.propTypes = {
+  itemDetails: PropTypes.object,
+  pricing: PropTypes.object
+};
 
 export default ItemDetails;

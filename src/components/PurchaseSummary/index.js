@@ -4,7 +4,7 @@ import PriceSummary from '../PriceSummary';
 import Promotion from '../Promotion';
 import ItemDetails from '../ItemDetails';
 import './style.css';
-
+import PropTypes from 'prop-types';
 class PurchaseSummary extends Component {
   applyPromoCode = () => {
     const { subtotal, savings, tax } = this.props.pricingData.pricing;
@@ -34,5 +34,10 @@ class PurchaseSummary extends Component {
     );
   }
 }
+
+PurchaseSummary.propTypes = {
+  pricingData: PropTypes.object,
+  applyDiscount: PropTypes.func
+};
 
 export default PurchaseSummary;

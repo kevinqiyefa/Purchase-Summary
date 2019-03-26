@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './style.css';
+import PropTypes from 'prop-types';
 
 class Promotion extends Component {
   state = {
@@ -17,13 +18,11 @@ class Promotion extends Component {
 
   handleApplyPromoCode = () => {
     //you can only apply the promo code once
-    //should add a temp state to check when should display error messages
     if (
       this.state.promoCode === this.props.promoCode &&
       !this.props.discountApplied
     ) {
       this.setState({ promoCode: '', showForm: false });
-
       this.props.applyPromoCode();
     } else {
       this.setState({ promoCode: '' });
@@ -75,5 +74,11 @@ class Promotion extends Component {
     return <div className="Promotion-Main">{promoSection}</div>;
   }
 }
+
+Promotion.propTypes = {
+  promoCode: PropTypes.string,
+  discountApplied: PropTypes.bool,
+  applyPromoCode: PropTypes.func
+};
 
 export default Promotion;

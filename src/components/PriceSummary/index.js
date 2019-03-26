@@ -1,5 +1,6 @@
 import React from 'react';
 import './style.css';
+import PropTypes from 'prop-types';
 
 const PriceSummary = ({ pricing }) => {
   return (
@@ -36,6 +37,10 @@ const PriceSummary = ({ pricing }) => {
       </div>
     </div>
   );
+};
+
+PriceSummary.propTypes = {
+  pricing: PropTypes.object
 };
 
 export default PriceSummary;
