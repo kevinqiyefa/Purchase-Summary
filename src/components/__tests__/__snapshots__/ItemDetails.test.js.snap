@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing ItemDetails Component matches snapshot 1`] = `
+<div
+  className="Item-Details-Main"
+>
+  <div
+    className="Item-Details-Title"
+    onClick={[Function]}
+  >
+    <h4>
+      See item details 
+    </h4>
+     
+    <span
+      className="add"
+    />
+  </div>
+</div>
+`;

@@ -39,7 +39,7 @@ class Promotion extends Component {
         <label htmlFor="input-promo-code" id="promotion-form-input-label">
           Promo code
         </label>
-        <div>
+        <div className="promotion-form-input">
           <input
             type="text"
             name="promoCode"

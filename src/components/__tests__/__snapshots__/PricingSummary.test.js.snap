@@ -1,0 +1,73 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing PricingSummary Component matches snapshot 1`] = `
+<div
+  className="Price-Summary-Main"
+>
+  <div>
+    <span>
+      Subtotal
+    </span>
+    <span
+      className="bold-text"
+    >
+      $
+      102.96
+    </span>
+  </div>
+  <div>
+    <div
+      className="Price-Summary-Savings"
+    >
+      Pickup savings
+      <span
+        className="tooltiptext"
+      >
+        Pickup your order in the store helps cut cost, and we pass the savings on to you.
+      </span>
+    </div>
+    <span
+      className="red-text bold-text"
+    >
+      -$
+      3.85
+    </span>
+  </div>
+  <div>
+    <div
+      className="Price-Summary-Tax-Zip"
+    >
+      <span>
+        Est. taxes & fees
+      </span>
+      <span>
+        (Based on 
+        85050
+        )
+      </span>
+    </div>
+    <span
+      className="bold-text"
+    >
+      $
+      8.92
+    </span>
+  </div>
+  <hr />
+  <div
+    className="big-text"
+  >
+    <span
+      className="bold-text"
+    >
+      Est. total
+    </span>
+    <span
+      className="bold-text"
+    >
+      $
+      108.03
+    </span>
+  </div>
+</div>
+`;

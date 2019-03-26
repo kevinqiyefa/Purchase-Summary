@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing PuchaseSummary Component matches snapshot 1`] = `
+<div
+  className="Purchase-Summary-Main"
+>
+  <PriceSummary
+    pricing={
+      Object {
+        "savings": 3.85,
+        "subtotal": 102.96,
+        "tax": 8.92,
+        "total": 108.03,
+        "zip": 85050,
+      }
+    }
+  />
+  <ItemDetails
+    itemDetails={
+      Object {
+        "item_name": "Essntials by OFM ESS-3085 Racing Style Leather Gaming Chair, Red",
+        "quantity": 1,
+      }
+    }
+    pricing={
+      Object {
+        "savings": 3.85,
+        "subtotal": 102.96,
+        "tax": 8.92,
+        "total": 108.03,
+        "zip": 85050,
+      }
+    }
+  />
+  <Promotion
+    applyPromoCode={[Function]}
+    discountApplied={false}
+    promoCode="DISCOUNT"
+  />
+</div>
+`;

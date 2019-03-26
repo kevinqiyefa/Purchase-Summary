@@ -1,0 +1,165 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing ItemDetails Component matches snapshot 1`] = `
+<PurchaseSummary
+  pricingData={
+    Object {
+      "discount_applied": false,
+      "itemDetails": Object {
+        "item_name": "Essntials by OFM ESS-3085 Racing Style Leather Gaming Chair, Red",
+        "quantity": 1,
+      },
+      "pricing": Object {
+        "savings": 3.85,
+        "subtotal": 102.96,
+        "tax": 8.92,
+        "total": 108.03,
+        "zip": 85050,
+      },
+      "promo_code": "DISCOUNT",
+    }
+  }
+>
+  <div
+    className="Purchase-Summary-Main"
+  >
+    <PriceSummary
+      pricing={
+        Object {
+          "savings": 3.85,
+          "subtotal": 102.96,
+          "tax": 8.92,
+          "total": 108.03,
+          "zip": 85050,
+        }
+      }
+    >
+      <div
+        className="Price-Summary-Main"
+      >
+        <div>
+          <span>
+            Subtotal
+          </span>
+          <span
+            className="bold-text"
+          >
+            $
+            102.96
+          </span>
+        </div>
+        <div>
+          <div
+            className="Price-Summary-Savings"
+          >
+            Pickup savings
+            <span
+              className="tooltiptext"
+            >
+              Pickup your order in the store helps cut cost, and we pass the savings on to you.
+            </span>
+          </div>
+          <span
+            className="red-text bold-text"
+          >
+            -$
+            3.85
+          </span>
+        </div>
+        <div>
+          <div
+            className="Price-Summary-Tax-Zip"
+          >
+            <span>
+              Est. taxes & fees
+            </span>
+            <span>
+              (Based on 
+              85050
+              )
+            </span>
+          </div>
+          <span
+            className="bold-text"
+          >
+            $
+            8.92
+          </span>
+        </div>
+        <hr />
+        <div
+          className="big-text"
+        >
+          <span
+            className="bold-text"
+          >
+            Est. total
+          </span>
+          <span
+            className="bold-text"
+          >
+            $
+            108.03
+          </span>
+        </div>
+      </div>
+    </PriceSummary>
+    <ItemDetails
+      itemDetails={
+        Object {
+          "item_name": "Essntials by OFM ESS-3085 Racing Style Leather Gaming Chair, Red",
+          "quantity": 1,
+        }
+      }
+      pricing={
+        Object {
+          "savings": 3.85,
+          "subtotal": 102.96,
+          "tax": 8.92,
+          "total": 108.03,
+          "zip": 85050,
+        }
+      }
+    >
+      <div
+        className="Item-Details-Main"
+      >
+        <div
+          className="Item-Details-Title"
+          onClick={[Function]}
+        >
+          <h4>
+            See item details 
+          </h4>
+           
+          <span
+            className="add"
+          />
+        </div>
+      </div>
+    </ItemDetails>
+    <Promotion
+      applyPromoCode={[Function]}
+      discountApplied={false}
+      promoCode="DISCOUNT"
+    >
+      <div
+        className="Promotion-Main"
+      >
+        <div
+          className="Promotion-Section-Title"
+          onClick={[Function]}
+        >
+          <h4>
+            Apply promo code 
+          </h4>
+           
+          <span
+            className="add"
+          />
+        </div>
+      </div>
+    </Promotion>
+  </div>
+</PurchaseSummary>
+`;
