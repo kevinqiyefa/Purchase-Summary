@@ -1,0 +1,56 @@
+.Price-Summary-Main {
+  display: flex;
+  flex-direction: column;
+  width: 15em;
+}
+
+.Price-Summary-Main > div {
+  display: flex;
+  justify-content: space-between;
+  margin: 0.3em 0;
+}
+
+.Price-Summary-Savings {
+  position: relative;
+  text-decoration: underline;
+}
+.Price-Summary-Savings .tooltiptext {
+  visibility: hidden;
+  width: 18em;
+  background-color: #eee;
+
+  text-align: center;
+  border-radius: 6px;
+  padding: 1.5em 2.3em;
+  position: absolute;
+  z-index: 1;
+  top: 130%;
+  left: 50%;
+  margin-left: -100px;
+  box-shadow: 1px 1px 1px lightgrey;
+  box-sizing: border-box;
+
+  -webkit-transition: visibility 0.3s;
+  transition: visibility 0.3s;
+}
+
+.Price-Summary-Savings .tooltiptext::after {
+  content: '';
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+
+  border-color: transparent transparent #eee transparent;
+}
+
+.Price-Summary-Savings:hover .tooltiptext {
+  visibility: visible;
+}
+
+.Price-Summary-Tax-Zip {
+  display: flex;
+  flex-direction: column;
+}
