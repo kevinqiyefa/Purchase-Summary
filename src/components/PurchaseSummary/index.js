@@ -12,7 +12,7 @@ class PurchaseSummary extends Component {
     return pricing ? (
       <div className="Purchase-Summary-Main">
         <PriceSummary pricing={pricing} />
-        <ItemDetails itemDetails={itemDetails} />
+        <ItemDetails itemDetails={itemDetails} pricing={pricing} />
         <Promotion />
       </div>
     ) : (

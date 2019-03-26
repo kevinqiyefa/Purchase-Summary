@@ -13,11 +13,13 @@
 .Price-Summary-Savings {
   position: relative;
   text-decoration: underline;
+  cursor: pointer;
 }
 .Price-Summary-Savings .tooltiptext {
   visibility: hidden;
   width: 18em;
   background-color: #eee;
+  cursor: text;
 
   text-align: center;
   border-radius: 6px;

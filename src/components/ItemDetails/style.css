@@ -1,0 +1,58 @@
+.Item-Details-Main {
+  width: 15em;
+}
+
+#add::after {
+  content: '\002B';
+}
+
+#minus::after {
+  content: '\2212';
+}
+
+.Item-Details-Title {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.Item-Details-Main h4 {
+  text-decoration: underline;
+}
+
+#add,
+#minus {
+  padding-left: 0.5em;
+  font-size: 2em;
+  padding-bottom: 0.25em;
+}
+
+.item-details {
+  display: flex;
+  margin-bottom: 1em;
+}
+
+#item-name {
+  font-size: 0.8em;
+}
+
+#item-qty {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9em;
+  margin-bottom: 0.5em;
+}
+
+#item-picture img {
+  width: 5em;
+  padding-top: 0.5em;
+}
+.item-saving-prices {
+  display: flex;
+  flex-direction: column;
+}
+
+.item-subtotal {
+  color: gray;
+  text-decoration: line-through;
+}
