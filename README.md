@@ -1,68 +1,37 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Instructions:
 
-## Available Scripts
+> 1. `Clone the Repo`
+> 2. `npm install`
+> 3. `npm start`
+> 4. `npm test` to run the unit test and snapshots test
 
-In the project directory, you can run:
+## App Structure
 
-### `npm start`
+### Directories
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+The app is organized into a few main directories. Here's an explanation for each of them:
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+- `components` - all regular React components go in here in their own folders
+- `containers` - these are Redux containers that contain **only the Redux logic**. Every container imports a React component, which it wraps around and exports with `connect`.
 
-### `npm test`
+- `store` - anything explicitly Redux-related (aside from connected-components, aka `containers`) lives in here.
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Component Folders
 
-### `npm run build`
+One of the first things you will notice is that everything is basically in its own folder. Every component has a folder, for instance. Here's what goes into a component's folder:
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- `index.js` - the main component code here
+- `style.css` - CSS styles relating to the component
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+## App Features
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- The `Pickup savings` tooltip
+  - It's in OrderSummary section, and you can see all the discounts/savings and total prices
+- The `See Item details` expander
+  - You can see all the item details
+- The `Apply Promo code` expander
 
-### `npm run eject`
+  - Once you enter the correct promo code(it is `DISCOUNT`), it will dispach an action and update the reducer, then it will update the pricing summary and the item details section.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+* The `UI` is responsive and works fine across different resolutions
+* There are `unit tests` and `snapshot tests` for components with interactions
