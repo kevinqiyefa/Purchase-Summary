@@ -1,7 +1,6 @@
 .Price-Summary-Main {
   display: flex;
   flex-direction: column;
-  width: 15em;
 }
 
 .Price-Summary-Main > div {

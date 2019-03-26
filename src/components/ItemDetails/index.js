@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 import './style.css';
 import itemImage from '../../assets/red-chair.jpeg';
 
@@ -34,13 +34,13 @@ class ItemDetails extends Component {
     );
 
     const itemDetails = this.state.isActive ? (
-      <div>
+      <Fragment>
         <div className="Item-Details-Title" onClick={this.handleClick}>
           <h4>Hide item details </h4> <span className="minus" />
         </div>
         {item}
         <hr />
-      </div>
+      </Fragment>
     ) : (
       <div onClick={this.handleClick} className="Item-Details-Title">
         <h4>See item details </h4> <span className="add" />

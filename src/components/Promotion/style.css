@@ -30,6 +30,7 @@
 #promotion-form-input-field {
   margin-right: 2em;
   border: 1px solid gray;
+  width: 100%;
 }
 
 #promotion-form-button {

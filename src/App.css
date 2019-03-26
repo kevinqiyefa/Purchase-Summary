@@ -4,4 +4,17 @@
   position: relative;
   display: flex;
   justify-content: flex-end;
+  min-width: 200px;
+}
+
+@media screen and (max-width: 640px) {
+  .App {
+    margin: 0 2em;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .App {
+    margin: 0 1em;
+  }
 }
